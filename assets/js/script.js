@@ -32,7 +32,7 @@ projectsElement.innerHTML = projects.map((project) => `
 
 function ScrollTo(elementId) {
     var element = document.getElementById(elementId);
-    var headerOffset = 45;
+    var headerOffset = 72;
     var elementPosition = element.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
   
