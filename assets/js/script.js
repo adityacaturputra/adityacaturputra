@@ -7,6 +7,14 @@ const projects = [
         repoUrl: 'https://github.com/adityacaturputra/your-school-univday',
         DemoUrl: 'https://univdaysmansaka.web.app/',
     },
+    {
+        name: 'BUSY SCHOOL - SCHOOL SCHEDULE WEB APP',
+        description: 'Busy School is a web application that is useful for managing class schedules, viewing class schedules, and managing class assignments.',
+        techStack: 'React, Create React App, Redux, PWA, Styled Components, HTML, CSS, JavaScript, Supabase, SQL',
+        imgUrl: 'https://i.ibb.co/X4Q69sk/image.png',
+        repoUrl: 'https://github.com/adityacaturputra/busy-school',
+        DemoUrl: 'https://busy-school.vercel.app/',
+    },
     
 ]
 

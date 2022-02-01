@@ -99,7 +99,26 @@ body {
     color: var(--dark-blue);
     font-size: 20px;
     font-weight: regular;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
+}
+.btn-cv {
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 2px var(--blue);
+    cursor:pointer;
+    padding: 12px 64px;
+    margin-bottom: 60px;
+    transition: all .3s;
+}
+
+.btn-cv:hover {
+    color: var(--dark-blue);
+}
+
+.btn-cv:active {
+    background: var(--blue);
+    color: var(--white);
 }
 
 .profile-info {
@@ -147,7 +166,7 @@ body {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 64px;
+    row-gap: 64px;
 }
 
 .project-container {
@@ -173,6 +192,7 @@ body {
 }
 .project-image__img {
     border-radius: 20px 100px 20px 20px;
+    min-width: 280px;
     object-fit: cover;
 }
 
