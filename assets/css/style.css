@@ -34,6 +34,19 @@
     .title-name {
         font-size: 56px !important;
     }
+
+    .project-title {
+        font-size: 24px !important;
+    }
+    .project-name {
+        font-size: 24px !important;
+    }
+    .project-description {
+        font-size: 14px !important;
+    }
+    .project-tech-stack {
+        font-size: 14px !important;
+    }
 }
 
 body {
@@ -92,7 +105,7 @@ body {
 }
 
 .title-project {
-    font-size: 36px;
+    font-size: 28px;
     margin: 118px 0 32px;
 }
 
@@ -232,7 +245,7 @@ body {
 }
 
 .project-title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--blue);
     padding: 12px;
@@ -242,17 +255,18 @@ body {
 }
 
 .project-name {
-    font-size: 24px;
+    margin-bottom: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--white)
 }
 .project-description {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: regular;
     color: var(--white)
 }
 .project-tech-stack {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: var(--white)
 }
