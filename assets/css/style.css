@@ -78,12 +78,26 @@ body {
     display: flex;
     gap: var(--p-24);
     color: var(--dark-blue);
-    font-size: 14px;
     font-weight: bold;
 }
 
 .nav-item {
+    color: var(--dark-blue);
+    font-size: 14px;
+    text-decoration: none;
     cursor: pointer;
+    border-bottom: solid 2px var(--white);
+    transition: all .2s;
+}
+
+.nav-item:hover {
+    border-bottom: solid 2px var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.nav-item:active {
+    color: var(--blue);
+    border-bottom: solid 2px var(--blue);
 }
 
 .container__header {
@@ -188,6 +202,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     row-gap: 64px;
+    column-gap: 18px;
 }
 
 .project-container {
@@ -215,12 +230,11 @@ body {
     margin: 12px;
     position: relative;
     border-radius: 20px 100px 20px 20px;
-    height: 480px;
 }
 .project-image__img {
     border-radius: 20px 100px 20px 20px;
-    min-width: 280px;
     object-fit: cover;
+    height: 570px;
 }
 
 .project-image__img-overlay {

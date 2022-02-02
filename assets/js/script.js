@@ -11,9 +11,17 @@ const projects = [
         name: 'Busy Schedule - School Schedule Web App',
         description: 'Busy School is a web application that is useful for managing class schedules, viewing class schedules, and managing class assignments.',
         techStack: 'React, Create React App, Redux, PWA, Styled Components, HTML, CSS, JavaScript, Supabase, SQL',
-        imgUrl: 'https://i.ibb.co/X4Q69sk/image.png',
+        imgUrl: 'https://i.ibb.co/XDJc5TL/image.png',
         repoUrl: 'https://github.com/adityacaturputra/busy-school',
         DemoUrl: 'https://busy-school.vercel.app/',
+    },
+    {
+        name: 'Food Explorer - Restaurant Web App',
+        description: 'Web app for explore any food you wanna to eat. This repo is to fulfill submissions on Dicoding course platform Learn Front-End Web Development Fundamentals. In this course, discussed about javascript es6, oop, web components, node js, npm, webpack, and ajax.',
+        techStack: 'HTML, CSS, Javascript, Web Components, Webpack, Babel, Nodejs',
+        imgUrl: 'https://i.ibb.co/XzKjJDh/image.png',
+        repoUrl: 'https://github.com/adityacaturputra/food-explorer',
+        DemoUrl: 'https://food-explorer.vercel.app/',
     },
     
 ]
@@ -44,7 +52,6 @@ function ScrollTo(elementId) {
     var headerOffset = 72;
     var elementPosition = element.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
     window.scrollTo({
          top: offsetPosition,
          behavior: "smooth"
