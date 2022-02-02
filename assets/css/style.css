@@ -78,7 +78,7 @@ body {
     display: flex;
     gap: var(--p-24);
     color: var(--dark-blue);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 }
 
