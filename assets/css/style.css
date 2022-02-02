@@ -25,7 +25,7 @@
     }
 }
 
-@media (min-width: 536px){
+@media (min-width: 555px){
     .profile-details {
         justify-content: space-between !important;
         flex-direction: row !important;
@@ -57,6 +57,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
 }
 
 .nav__list {
@@ -85,13 +87,13 @@ body {
 }
 
 .title-name {
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
 }
 
 .title-project {
     font-size: 36px;
-    margin: 118px 0 64px;
+    margin: 118px 0 32px;
 }
 
 .subtitle {
@@ -102,23 +104,29 @@ body {
     margin-bottom: 60px;
 }
 .btn-cv {
-    color: var(--blue);
+    display: block;
+    background: var(--blue);
+    color: var(--white);
     font-size: 18px;
     font-weight: bold;
     border: solid 2px var(--blue);
     cursor:pointer;
-    padding: 12px 64px;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
     margin-bottom: 60px;
     transition: all .3s;
+    border-radius: 6px;
 }
 
 .btn-cv:hover {
-    color: var(--dark-blue);
+    background: var(--dark-blue);
+    border: solid 2px var(--dark-blue);
 }
 
 .btn-cv:active {
-    background: var(--blue);
-    color: var(--white);
+    color: var(--dark-blue);
+    background: var(--white)
 }
 
 .profile-info {
@@ -184,6 +192,12 @@ body {
     background: rgba(51, 66, 87, 0.97);
 }
 
+.project-container:hover .project-title {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -50px;
+}
+
 .project-image {
     margin: 12px;
     position: relative;
@@ -214,6 +228,16 @@ body {
     left: 12px;
     line-height: 180%;
     opacity: 0;
+    transition: all .3s;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
+    padding: 12px;
+    width: 80%;
+    line-height: 150%;
     transition: all .3s;
 }
 
