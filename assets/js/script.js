@@ -11,7 +11,7 @@ const projects = [
         name: 'Busy Schedule - School Schedule Web App',
         description: 'Busy School is a web application that is useful for managing class schedules, viewing class schedules, and managing class assignments.',
         techStack: 'React, Create React App, Redux, PWA, Styled Components, HTML, CSS, JavaScript, Supabase, SQL',
-        imgUrl: 'https://i.ibb.co/XDJc5TL/image.png',
+        imgUrl: 'https://i.ibb.co/5Yzb7H3/image.png',
         repoUrl: 'https://github.com/adityacaturputra/busy-school',
         DemoUrl: 'https://busy-school.vercel.app/',
     },
