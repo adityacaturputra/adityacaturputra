@@ -8,6 +8,13 @@
     --mt-120: 120px;
 }
 
+@media (max-height: 800px) {
+    img.project-image__img {
+        height: 60vh !important;
+        width: 100% !important;
+    }
+}
+
 @media (min-width: 1064px){
     .title-name {
         text-align: left !important;
@@ -23,10 +30,8 @@
     .profile-img {
         display: block !important;
     }
-
     .project-image__img {
         width: fit-content !important;
-        height: 60vh !important;
     }
 }
 
@@ -83,7 +88,7 @@ body {
     display: flex;
     gap: var(--p-24);
     color: var(--dark-blue);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .nav-item {
@@ -114,7 +119,7 @@ body {
 
 .h1 {
     color: var(--dark-blue);
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: var(--p-24);
 }
 
@@ -140,7 +145,7 @@ body {
     background: var(--blue);
     color: var(--white);
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     border: solid 2px var(--blue);
     cursor:pointer;
     padding: 12px 0;
@@ -188,7 +193,7 @@ body {
 .profile-detail__subtitle {
     color: var(--blue);
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 150%;
 }
 
@@ -221,8 +226,14 @@ body {
     opacity: 1;
 }
 
+.project-container:hover .project-image__img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    border-radius: 20px 100px 20px 20px;
+}
+
 .project-container:hover .project-image__img-overlay {
-    background: rgba(51, 66, 87, 0.97);
+    background: rgba(255, 255, 255, 0.685);
 }
 
 .project-container:hover .project-title {
@@ -237,10 +248,12 @@ body {
     border-radius: 20px 100px 20px 20px;
 }
 .project-image__img {
-    border-radius: 20px 100px 20px 20px;
+    border-radius: 20px;
     object-fit: cover;
+    filter: blur(0);
     width: 100%;
     height: 500px;
+    transition: all .3s;
 }
 
 .project-image__img-overlay {
@@ -266,7 +279,7 @@ body {
 
 .project-title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--blue);
     padding: 12px;
     width: 80%;
@@ -277,39 +290,46 @@ body {
 .project-name {
     margin-bottom: 16px;
     font-size: 18px;
-    font-weight: bold;
-    color: var(--white)
+    font-weight: 700;
+    color: var(--blue)
 }
 .project-description {
     font-size: 12px;
-    font-weight: regular;
-    color: var(--white)
+    font-weight: 600;
+    color: var(--dark-blue)
 }
 .project-tech-stack {
     font-size: 12px;
-    font-weight: bold;
-    color: var(--white)
+    font-weight: 700;
+    color: var(--dark-blue)
 }
 
 .anchor {
-    color: white;
+    color: var(--blue);
+    font-weight: 700;
 }
 
 .skill-list {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: regular;
     color: var(--blue);
     line-height: 180%;
 }
 
 .skill-title {
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 180%;
 }
 
 .footer-text {
     color: var(--blue);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+}
+
+footer {
+    margin-top: 240px !important;
 }
