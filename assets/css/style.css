@@ -6,6 +6,9 @@
     --blue: #548CA8;
     --p-24: 24px;
     --mt-120: 120px;
+    --fs-56:56px;
+    --fs-24:24px;
+    --fs-14:14px;
 }
 
 @media (max-height: 800px) {
@@ -42,20 +45,20 @@
     }
 
     .title-name {
-        font-size: 56px !important;
+        font-size: var(--fs-56) !important;
     }
 
     .project-title {
-        font-size: 24px !important;
+        font-size: var(--fs-24) !important;
     }
     .project-name {
-        font-size: 24px !important;
+        font-size: var(--fs-24) !important;
     }
     .project-description {
-        font-size: 14px !important;
+        font-size: var(--fs-14) !important;
     }
     .project-tech-stack {
-        font-size: 14px !important;
+        font-size: var(--fs-14) !important;
     }
 }
 
@@ -111,7 +114,7 @@ body {
 }
 
 .container__header {
-    margin-top: var(--mt-120);
+    margin-top: 12vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -120,7 +123,7 @@ body {
 .h1 {
     color: var(--dark-blue);
     font-weight: 700;
-    margin-bottom: var(--p-24);
+    margin-bottom: 4vh;
 }
 
 .title-name {
@@ -138,7 +141,7 @@ body {
     color: var(--dark-blue);
     font-size: 20px;
     font-weight: regular;
-    margin-bottom: 60px;
+    margin-bottom: 6vh;
 }
 .btn-cv {
     display: block;
@@ -151,7 +154,7 @@ body {
     padding: 12px 0;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 60px;
+    margin-bottom: 6vh;
     transition: all .3s;
     border-radius: 6px;
 }
@@ -173,14 +176,14 @@ body {
 .profile-details {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 4vh;
 }
 
 .profile-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 64px;
+    gap: 4vh;
 }
 
 .profile-detail__title {
@@ -211,13 +214,18 @@ body {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 64px;
+    row-gap: 18px;
     column-gap: 18px;
 }
 
 .project-container {
-    border: solid 2px var(--dark-blue);
+    border: solid 2px #47607212;
     border-radius: 20px 100px 20px 20px;
+    transition: all .3s;
+}
+
+.project-container:hover {
+    border: solid 2px #476072;
 }
 
 .project-container:hover .project-text {
@@ -233,7 +241,7 @@ body {
 }
 
 .project-container:hover .project-image__img-overlay {
-    background: rgba(255, 255, 255, 0.95);
+    background: #eeeeeef5;
 }
 
 .project-container:hover .project-title {
